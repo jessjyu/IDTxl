@@ -1,3 +1,4 @@
+# %%  
 # Import classes
 import numpy as np
 from idtxl.bivariate_pid import BivariatePID
@@ -52,3 +53,5 @@ print('Synergy s1_s2        {0:.4f}\t\t{1:.4f}\t\t{2:.2f}'.format(
     results_sydney.get_single_target(2)['syn_s1_s2'],
     results_tartu.get_single_target(2)['syn_s1_s2'],
     1))
+
+# %%

@@ -1,3 +1,4 @@
+# %% 
 """Demonstrate the usage of IDTxl's core estimators."""
 import numpy as np
 from idtxl.estimators_python import PythonKraskovCMI
@@ -51,6 +52,8 @@ est = JidtDiscreteAIS(settings)
 ais = est.estimate(target)
 print("Estimated AIS: {0:.5f}, expected AIS: ~0".format(ais))
 
+
+# %% 
 # JIDT Kraskov estimators
 settings = {}
 est = JidtKraskovCMI(settings)
@@ -68,6 +71,8 @@ est = JidtKraskovAIS(settings)
 ais = est.estimate(target)
 print("Estimated AIS: {0:.5f}, expected AIS: ~0".format(ais))
 
+
+# %%
 # JIDT Gaussian estimators
 settings = {}
 est = JidtGaussianCMI(settings)
@@ -85,6 +90,7 @@ est = JidtGaussianAIS(settings)
 ais = est.estimate(target)
 print("Estimated AIS: {0:.5f}, expected AIS: ~0".format(ais))
 
+# %%
 # OpenCL Kraskov estimators
 settings = {}
 est = OpenCLKraskovCMI(settings)
@@ -94,6 +100,8 @@ est = OpenCLKraskovMI(settings)
 mi = est.estimate(source_cor, target)
 print("Estimated MI: {0:.5f}, expected MI: {1:.5f}".format(mi[0], expected_mi))
 
+
+# %%
 # Generate binary test data
 alph_x = 2
 alph_y = 2
@@ -125,3 +133,5 @@ print(
         pid_tartu["syn_s1_s2"]
     )
 )
+
+# %%
