@@ -15,6 +15,8 @@ settings = {'cmi_estimator': 'JidtGaussianCMI',
             'max_lag_sources': 5,
             'min_lag_sources': 1}
 
+
+# %% 
 # c) Run analysis
 results = network_analysis.analyse_network(settings=settings, data=data)
 
